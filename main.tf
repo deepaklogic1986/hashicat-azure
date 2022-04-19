@@ -15,10 +15,7 @@ resource "azurerm_resource_group" "myresourcegroup" {
   name     = "${var.prefix}-workshop"
   location = var.location
 
-  tags = {
-    environment = "Production"
-  }
-}
+
 
 resource "azurerm_virtual_network" "vnet" {
   name                = "${var.prefix}-vnet"
